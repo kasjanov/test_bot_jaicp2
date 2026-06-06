@@ -7,7 +7,7 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!: /привет
+        q!: ~*$regex</hello>*
         a: Привет привет
 
     state: Bye
