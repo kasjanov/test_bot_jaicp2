@@ -65,7 +65,7 @@ theme: /
             a: Пока пока
 
     state: NoMatch
-        event!: /noMatch
+        event!: noMatch
         random:
             a: Вы можете задать вопрос по другому?
             a: Я не понял.
