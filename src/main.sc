@@ -26,12 +26,9 @@ theme: /
         a: В каком городе вас интересует погода?
         # ожидаем ответ с названием города
         state: City
-            q: * $City *
-            q: * @sys.geo-city *
             q: *
             script:
-                var city = $parseTree._City || $request.query;
-                $session.city = city;
+                $session.city = $request.query;
             random:
                 a: Погода в городе {{$session.city}} сегодня отличная — солнечно и тепло! ☀️
                 a: В городе {{$session.city}} переменная облачность, +18 °C. Возьмите зонт на всякий случай 🌤
