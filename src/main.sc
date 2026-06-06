@@ -7,7 +7,7 @@ theme: /
         a: Начнём.
 
     state: Hello
-        q!:/hello
+        q!: $regex</hello>
         a: Привет привет
 
     state: Bye
