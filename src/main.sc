@@ -7,7 +7,7 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!:~*hello*
+        intent!:~*/hello*
         a: Привет привет
 
     state: Bye
