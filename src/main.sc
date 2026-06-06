@@ -3,7 +3,6 @@ require: slotfilling/slotFilling.sc
 theme: /
 
     state: /hello
-        intent!: /hello
         q!: *(~hello*/~привет*)*
         q!: *(~привет/~здравствуй/~hello/~hi/~good morning/~good evening/~добрый день/~доброе утро/~добрый вечер/~приветствую)*
         random:
@@ -16,7 +15,6 @@ theme: /
             a: Доброго времени суток! Готов помочь с погодой и валютами.
     
     state: /weather
-        intent!: /weather
         q!: *(~погода/~weather/~forecast/~report/~prediction/~прогноз/~температура/~дождь/~снег/~холодно/~тепло/~жарко/~солнечно)*
         q!: *какая погода*
         q!: *что с погодой*
@@ -27,7 +25,6 @@ theme: /
             a: В ясная погода, идеальный день для прогулки! 😎
 
     state: /currency
-        intent!: /currency
         q!: *(~валют/~курс/~доллар/~евро/~рубль/~dollar/~forex/~rate/~currency/~exchange/~обмен/~деньги)*
         q!: *сколько стоит доллар*
         q!: *курс валют*
