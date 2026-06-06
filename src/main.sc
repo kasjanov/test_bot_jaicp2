@@ -9,6 +9,10 @@ theme: /
     state: Hello
         q!: *~hello*
         a: Привет привет
+    
+    state: Weather
+        q!: *~weather/погод*
+        a: погода сегодня топчик!
 
     state: Bye
         intent!: /пока
