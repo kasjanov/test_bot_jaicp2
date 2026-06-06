@@ -7,11 +7,14 @@ theme: /
         a: Начнём.
 
     state: Hello
-        q!: *~hello*
-        a: Привет привет
+        q!: *(~hello*/~привет*)*
+        random:
+            a: Привет привет
+            a: И вам не хворать)
+            a: Здравствуйте!
     
     state: Weather
-        q!: *~(weather*/погод*)*
+        q!: *(~weather*/~погод*)*
         a: погода сегодня топчик!
 
     state: Bye
