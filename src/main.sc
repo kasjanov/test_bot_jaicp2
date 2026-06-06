@@ -7,7 +7,7 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!:/hello
+        q!:/hello
         a: Привет привет
 
     state: Bye
