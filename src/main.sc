@@ -11,7 +11,7 @@ theme: /
         a: Привет привет
     
     state: Weather
-        q!: *~weather/погод*
+        q!: *~(weather*/погод*)*
         a: погода сегодня топчик!
 
     state: Bye
