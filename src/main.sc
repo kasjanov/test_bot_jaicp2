@@ -2,10 +2,6 @@ require: slotfilling/slotFilling.sc
   module = sys.zb-common
 theme: /
 
-    state: Start
-        q!: $regex</start>
-        a: Начнём.
-
     state: /hello
         intent!: /hello
         q!: *(~hello*/~привет*)*
@@ -46,16 +42,8 @@ theme: /
             a: Актуальный курс: 1 USD ≈ 90 рублей, 1 EUR ≈ 98 рублей.
             a: Курсы валют на сегодня: доллар 90 ₽, евро 98 ₽, юань 12 ₽.
             a: По данным на сегодня: USD = 90 ₽, EUR = 98 ₽. Курс может меняться 📈
-    
-    state: Bye
-        q!: *(~пока/~до свидания/~прощай/~bye/~увидимся)*
-        random:
-            a: Пока-пока! 👋
-            a: До свидания! Обращайтесь ещё.
-            a: Всего доброго! Буду рад помочь снова.
-            a: Пока пока
-
-    state: NoMatch
+ 
+    state: /NoMatch
         event!: noMatch
         random:
             a: Вы можете задать вопрос по другому?
@@ -65,7 +53,3 @@ theme: /
             a: Хм, не уверен, что понял. Спросите меня про погоду или курс валют 😊
             a: Не распознал ваш вопрос. Уточните, пожалуйста: погода или валюта?
             a: Да уж!
-
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}
