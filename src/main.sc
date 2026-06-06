@@ -38,7 +38,8 @@ theme: /
             a: По данным на сегодня: USD = 90 ₽, EUR = 98 ₽. Курс может меняться 📈
  
     state: /NoMatch
-        event!: NoMatch
+        event!: noMatch
+        intent!: /NoMatch
         random:
             a: Вы можете задать вопрос по другому?
             a: Я не понял.
