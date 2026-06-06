@@ -1,5 +1,3 @@
-require: slotfilling/slotFilling.sc
-  module = sys.zb-common
 theme: /
 
     state: /hello
@@ -39,7 +37,6 @@ theme: /
  
     state: /NoMatch
         event!: noMatch
-        intent!: /NoMatch
         random:
             a: Вы можете задать вопрос по другому?
             a: Я не понял.
